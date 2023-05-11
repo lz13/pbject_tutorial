@@ -4,6 +4,7 @@ class Color
   def initialize(name, hexcode)
     @name = name
     @hexcode = hexcode
+
   end
 
   def name
@@ -13,6 +14,12 @@ class Color
   def hexcode
     @hexcode
   end
+  
+  def update(hexcode)
+    update_hexcode(hexcode)
+  end
+
+  private
 
   def update_hexcode(hexcode)
     @hexcode = hexcode
@@ -20,7 +27,7 @@ class Color
 end
 
 color = Color.new("purple", "#8824a4")
-color.update_hexcode("#9427b2")
+color.update("#9427b2")
 
 # color1 = Color.new("purple", "#8824a4")
 # color2 = Color.new("blue", "#4x6fcc")
