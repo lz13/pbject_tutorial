@@ -13,9 +13,14 @@ class Color
   def hexcode
     @hexcode
   end
+
+  def update_hexcode(hexcode)
+    @hexcode = hexcode
+  end
 end
 
 color = Color.new("purple", "#8824a4")
+color.update_hexcode("#9427b2")
 
 # color1 = Color.new("purple", "#8824a4")
 # color2 = Color.new("blue", "#4x6fcc")
